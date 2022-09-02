@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</header>
+    <header><h4>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</h3></header>
 
     <br>
     <h1>Painel de Controle</h1>
     <br>
     
     <nav id="navigation">
-        <a href="/index.html">Index</a> |
+        <a href="/index.html">Sair</a> |
         <a href="historic.html">Histórico</a> |
         <a href="registration.html">Cadastro Curricular</a> |
+        <a href="controlPanel.html">Painel de Controle</a> 
     </nav>
 
     <div id="titleProfile">
@@ -32,8 +33,9 @@
         <h4>Jonas Carvalho Fortes | Matrícula: 494513 | IRA: 3.4 </h4>
         <h4>Créditos Integralizados: 32cr</h4>
         <br>
-        <label for="tema" >Tema:</label>
-        <input type="color">
+        
+        <center><label for=""><h4>Tema:</h3></label></center>
+        <center><input type="color"></center>
     </div>
 
     <div id="titleComponentesCurriculares">
@@ -64,15 +66,15 @@
     <div id="progressao">
         <br>
         <label for="file">Disciplinas obrigatórias:</label>
-        <progress id="file" value="32" max="100"> 32% </progress>
+        <progress id="file" value="60" max="100"> 32% </progress>
         
         <br>
         <label for="file">Disciplinas eletivas:</label>
-        <progress id="file" value="32" max="100"> 32% </progress>
+        <progress id="file" value="20" max="100"> 32% </progress>
         
         <br>
-        <label for="file">Disciplinas obrigatórias:</label>
-        <progress id="file" value="32" max="100"> 32% </progress>
+        <label for="file">Horas de estágio obrigatório:</label>
+        <progress id="file" value="18" max="100"> 32% </progress>
         
         <br>
         <label for="file">Horas complementares:</label>
@@ -80,7 +82,7 @@
         
         <br>
         <label for="file">Horas de extensão:</label>
-        <progress id="file" value="32" max="100"> 32% </progress>
+        <progress id="file" value="70" max="100"> 32% </progress>
         
         <br>
         <label for="file">Horas de programação:</label>
@@ -92,9 +94,10 @@
         <h3>Resumo Atividades Integralizadas</h3>
         <hr>
     </div>
+    
     <div id="resumo">
         <br>
-        <table>
+        <table border="solid">
             <tr>
               <th>Nome Atividade</th>
               <th>Tipo</th>
@@ -121,13 +124,18 @@
                 <td>40</td>
               </tr>
               <tr>
-                <th>Qtd. Créditos Pendentes: 80cr </th>
+                <th>Qtd. Créditos Pendentes: 40cr</th>
               </tr>
           </table>
           <br>
         
     </div>
+    
     <br>
-
+    <footer>
+      SIGAA | Copyright © 2010-2022 - 
+      Superintendência de Tecnologia da Informação
+       - UFC - (85) 3366-9999 - si3asprd04.ufc.br
+    </footer>
 </body>
 </html>
