@@ -1,6 +1,4 @@
-* {
-    scroll-padding: 0;
-}
+* {}
 
 body {
     background-color: #FDFFFC;
@@ -57,6 +55,7 @@ a {
     display: inline-block;
     border-radius: 4px;
 }
+
 a:hover {
     background-color: #E71D36;
     color: #FDFFFC;
@@ -65,6 +64,12 @@ a:hover {
     text-decoration: none;
     display: inline-block;
     border-radius: 4px;
+}
+
+
+nav#navigation a {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 a.component-class {
@@ -94,14 +99,83 @@ a.component-class {
 
 .title {
     font-size: 25px;
+    text-align: center;
 }
 
-#progressao {
-    font-size: 20px;
-    
+div {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-progress {
-    margin-bottom: 10px;
+div#profile,
+div#subjects,
+div#progression,
+div#actsumary {
+    width: 700px;
+    padding: 40px 40px 40px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+img#picture {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10%;
+    width: 35%;
+}
+
+div#divpicture{
+    width: 400px;
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+div#divinfo {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    background-color: aqua;
+    padding: 20px 20px 20px 20px;
+}
+
+
+form#register {
+    width: 700px;
+    margin: 15px 0px 15px 0px;
+    padding: 40px 40px 40px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+div#historic{
+    width: 1000px;
+    margin: 15px 0px 15px 0px;
+    padding: 40px 40px 40px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table#tablehistoric, table#tableactsumary{
+    align-self: center;
+    padding: 50px 25px 50px 25px;
+    display: block;
+}
+
+table#tablehistoric th, td {
+    border-bottom: 2px solid #E71D36;
+    padding: 5px 5px 5px 5px;
+}
+table#tableactsumary th, td {
+    border-bottom: 2px solid #E71D36;
+    padding: 5px 5px 5px 5px;
+}
+
+table#tableactsumary th {
+    background-color: #394674;
+    color: #FDFFFC;
+}
+
+table#tablehistoric th {
+    background-color: #394674;
+    color: #FDFFFC;
+}
