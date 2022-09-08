@@ -6,17 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novo SIGAA</title>
     <link rel="stylesheet" href="main.css">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- CSS interno -->
+    <style>
+
+        footer, header{
+            color: #FDFFFC;
+        }
+        #logoname{
+            font-size: 40px;
+        }
+        #logo-img{
+            width: 327.7px;
+            height: 86.9px;
+            margin-bottom: 30px;
+        }
+    </style>
+
 </head>
 <body>
-    <header><h4>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</h3></header>
+    <header>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</header>
     <br>
-    <h2>Login - O novo SIGAA</h2>
+    <!-- Css inline -->
+    <img id="logo-img" src="imgs/brasao1_horizontal_cor_300dpi.png" alt="brasão">
+    <h2 id="logoname" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";>O novo SIGAA</h2>
     <form action="/controlPanel.html">
         <label for="loginFild">Login</label>
-        <input type="text">
+        <input class="retang-fild" type="text">
         <br>
         <label for="passwFild">Senha</label>
-        <input type="password">
+        <input class="retang-fild" type="password">
         <br>
         <input type="submit">
     </form>
