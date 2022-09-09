@@ -1,4 +1,9 @@
-* {}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Quicksand&display=swap');
+
+* {
+    
+    font-family: 'Inconsolata', monospace;
+}
 
 body {
     background-color: #FDFFFC;
@@ -110,33 +115,45 @@ div {
 div#profile,
 div#subjects,
 div#progression,
+div#login,
 div#actsumary {
     width: 700px;
     padding: 40px 40px 40px 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-img#picture {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 10%;
-    width: 35%;
+div#login {
+    width: 500px;
 }
 
-div#divpicture{
-    width: 400px;
-    background-color: aquamarine;
-    display: inline-block;
-}
-
-div#divinfo {
-    width: 100px;
+h2#logoname {
     text-align: center;
-    display: inline-block;
-    background-color: aqua;
-    padding: 20px 20px 20px 20px;
 }
+
+img#picture {
+    display: inline-block;
+    border-radius: 4%;
+    width: 100%;
+}
+
+div#divpicture, div#divinfo{
+    display: inline-block;
+}
+div#divpicture{
+    width: 200px; 
+    height: 200px;
+}
+div#divinfo {
+    width: 410px;
+    height: 200px;
+    font-size: 22px;
+    text-align: center;
+}
+div#divinfo h4 {
+    padding-top: 12px;
+    padding-bottom: 18px;
+}
+
 
 
 form#register {
@@ -147,27 +164,31 @@ form#register {
 }
 
 
-
-div#historic{
+div#historic {
     width: 1000px;
     margin: 15px 0px 15px 0px;
     padding: 40px 40px 40px 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-table#tablehistoric, table#tableactsumary{
-    align-self: center;
-    padding: 50px 25px 50px 25px;
+table#tablehistoric,
+table#tablehistoric {
+    padding: 5px 25px 50px 25px;
     display: block;
 }
 
-table#tablehistoric th, td {
+table#tablehistoric th,
+td {
     border-bottom: 2px solid #E71D36;
     padding: 5px 5px 5px 5px;
 }
-table#tableactsumary th, td {
+
+table#tableactsumary th,
+td {
     border-bottom: 2px solid #E71D36;
     padding: 5px 5px 5px 5px;
+    width: 230px;
+    text-align: center;
 }
 
 table#tableactsumary th {
@@ -178,4 +199,46 @@ table#tableactsumary th {
 table#tablehistoric th {
     background-color: #394674;
     color: #FDFFFC;
+}
+
+progress {
+    border-radius: 1px;
+    width: 610px;
+    box-shadow: 1px 1px 4px #E71D36;
+    position: relative;
+}
+
+div#progression label {
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #FDFFFC;
+    border-radius: 0px;
+}
+
+progress::-webkit-progress-value {
+    background: #394674;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 1px #E71D36;
+}
+
+
+div#progression div {    
+    padding: 4px 4px 4px 4px;
+}
+
+input#color{
+    width: 20px;
+    border-radius: 10px;
+    display: inline;
+    background-color: #E71D36;
+    border-style: none;
+}
+h4#color{
+    font-size: 19px;
+    display: inline;
 }

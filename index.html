@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,19 @@
     <link rel="stylesheet" href="main.css">
     <!-- CSS externo -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- CSS interno -->
     <style>
-
-        footer, header{
+        footer,
+        header {
             color: #FDFFFC;
         }
-        #logoname{
+
+        #logoname {
             font-size: 40px;
         }
-        #logo-img{
+
+        #logo-img {
             width: 327.7px;
             height: 86.9px;
             margin-bottom: 30px;
@@ -26,27 +29,34 @@
     </style>
 
 </head>
+
 <body>
     <header>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</header>
     <br>
     <!-- Css inline -->
     <img id="logo-img" src="imgs/brasao1_horizontal_cor_300dpi.png" alt="brasão">
-    <h2 id="logoname" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";>O novo SIGAA</h2>
-    <form action="/controlPanel.html">
-        <label for="loginFild">Login</label>
-        <input class="retang-fild" type="text">
-        <br>
-        <label for="passwFild">Senha</label>
-        <input class="retang-fild" type="password">
-        <br>
-        <input type="submit">
-    </form>
+    
+    <div id="login">
+        <h2 id="logoname">
+            O novo SIGAA
+        </h2>
+        <form action="/controlPanel.html">
+            <label for="loginFild">Login</label>
+            <input class="retang-fild" type="text">
+            <br>
+            <label for="passwFild">Senha</label>
+            <input class="retang-fild" type="password">
+            <br>
+            <input type="submit">
+        </form>
+    </div>
 
     <footer>
-        SIGAA | Copyright © 2010-2022 - 
+        SIGAA | Copyright © 2010-2022 -
         Superintendência de Tecnologia da Informação
-         - UFC - (85) 3366-9999 - si3asprd04.ufc.br
+        - UFC - (85) 3366-9999 - si3asprd04.ufc.br
     </footer>
-    
+
 </body>
+
 </html>
