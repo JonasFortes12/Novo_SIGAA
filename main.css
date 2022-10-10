@@ -22,7 +22,7 @@ header {
   justify-content: center;
 }
 
-nav {
+nav#nav-inicio {
   width: 100%;
   padding: 0.5rem;
 
@@ -31,14 +31,14 @@ nav {
   gap: 1rem;
 }
 
-form {
+form.form-login {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
   padding: 2rem;
 }
 
-footer {
+footer.footer {
   background: #394674;
   color: #fff;
   width: 100%;
