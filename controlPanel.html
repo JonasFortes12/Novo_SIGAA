@@ -6,144 +6,173 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Painel de Controle</title>
-  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</header>
 
-  <br>
-  <h1 class="bigtitle">Painel de Controle</h1>
-  <br>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="img-logo" src="imgs/brasao1_horizontal_cor_300dpi.png" width="250" height="70" alt="">
+      </a>
 
-  <nav id="navigation">
-    <a href="/index.html">Sair</a>
-    <a href="historic.html">Histórico</a>
-    <a href="registration.html">Cadastro Curricular</a>
-    <a href="controlPanel.html">Painel de Controle</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a id="nav-button" class="nav-link active" href="controlPanel.html">Painel de Controle</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-button" class="nav-link active" href="historic.html">Histórico</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-button" class="nav-link active" href="registration.html">Cadastro de Componentes</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="nav-button" class="nav-link active" href="index.html">Sair</a>
+          </li>
+
+        </ul>
+
+      </div>
+      
+    </div>
   </nav>
 
 
-  <div id="profile">
 
-    <div id="titleProfile">
-      <h3 class="title">Perfil</h3>
-      <hr>
+  <div class="main-container">
+    <br>
+    <h1 class="bigtitle">Painel de Controle</h1>
+    <br>
+    
+    <div id="profile">
+
+      <div id="titleProfile">
+        <h3 class="title">Perfil</h3>
+        <hr>
+      </div>
+
+      <!-- <div id="divpicture"> -->
+      <div id="divpicture">
+        <img id="picture" src="imgs/minha foto.png" alt="imagem de Perfil" width="100px">
+      </div>
+
+      <div id="divinfo">
+        <h4>Jonas Carvalho Fortes</h4>
+        <h4>Matrícula: 494513</h4>
+        <h4>IRA: 8.0</h4>
+        <h4>Créditos Integralizados: 32cr</h4>
+      </div>
+
+      <h4 id="color">Tema:</h4>
+      <input id="color" style="color: blue;" type="color">
+
     </div>
 
-    <!-- <div id="divpicture"> -->
-    <div id="divpicture">
-      <img id="picture" src="imgs/minha foto.png" alt="imagem de Perfil" width="100px">
-    </div>
-
-    <div id="divinfo">
-      <h4>Jonas Carvalho Fortes</h4>
-      <h4>Matrícula: 494513</h4>
-      <h4>IRA: 8.0</h4>
-      <h4>Créditos Integralizados: 32cr</h4>
-    </div>
-
-    <h4 id="color">Tema:</h4>
-    <input id="color" style="color: blue;" type="color">
-
-  </div>
-
-  <div id="subjects">
-    <div id="titleComponentesCurriculares">
+    <div id="subjects">
+      <div id="titleComponentesCurriculares">
+        <br>
+        <h3 class="title">Componentes Curriculares Atuais</h3>
+        <hr>
+      </div>
       <br>
-      <h3 class="title">Componentes Curriculares Atuais</h3>
-      <hr>
-    </div>
-    <br>
-    <a class="component-class" href="">SBL0068 - ELETROMAGNETISMO APLICADO</a>
-    <br>
-    <a class="component-class" href="">SBL0077 - FUNDAMENTOS DE ADMINISTRAÇÃO</a>
-    <br>
-    <a class="component-class" href="">SBL0076 - FUNDAMENTOS DE ECONOMIA</a>
-    <br>
-    <a class="component-class" href="">SBL0078 - HIGIENE INDUSTRIAL E SEGURANÇA NO TRABALHO</a>
-    <br>
-    <a class="component-class" href="">ECO0056 - TECNOLOGIAS WEB</a>
-    <br>
-    <a class="component-class" href="">SBL0095 - VARIAVEIS COMPLEXAS</a>
-  </div>
-
-  <div id="progression">
-
-    <div id="titlePrgressao">
-      <h3 class="title">Progressão no Curso</h3>
-      <hr>
+      <a class="component-class" href="">SBL0068 - ELETROMAGNETISMO APLICADO</a>
+      <br>
+      <a class="component-class" href="">SBL0077 - FUNDAMENTOS DE ADMINISTRAÇÃO</a>
+      <br>
+      <a class="component-class" href="">SBL0076 - FUNDAMENTOS DE ECONOMIA</a>
+      <br>
+      <a class="component-class" href="">SBL0078 - HIGIENE INDUSTRIAL E SEGURANÇA NO TRABALHO</a>
+      <br>
+      <a class="component-class" href="">ECO0056 - TECNOLOGIAS WEB</a>
+      <br>
+      <a class="component-class" href="">SBL0095 - VARIAVEIS COMPLEXAS</a>
     </div>
 
-    <div>
-      <label for="file">Disciplinas obrigatórias:</label>
-      <progress id="file" value="60" max="100"> 32% </progress>
+    <div id="progression">
+
+      <div id="titlePrgressao">
+        <h3 class="title">Progressão no Curso</h3>
+        <hr>
+      </div>
+
+      <div>
+        <label for="file">Disciplinas obrigatórias:</label>
+        <progress id="file" value="60" max="100"> 32% </progress>
+      </div>
+
+      <div>
+        <label for="file">Disciplinas eletivas:</label>
+        <progress id="file" value="20" max="100"> 32% </progress>
+      </div>
+
+      <div>
+        <label for="file">Horas de estágio obrigatório:</label>
+        <progress id="file" value="18" max="100"> 32% </progress>
+      </div>
+
+      <div>
+        <label for="file">Horas complementares:</label>
+        <progress id="file" value="32" max="100"> 32% </progress>
+      </div>
+
+      <div>
+        <label for="file">Horas de extensão:</label>
+        <progress id="file" value="70" max="100"> 32% </progress>
+      </div>
+
+      <div>
+        <label for="file">Horas de programação:</label>
+        <progress id="file" value="32" max="100"> 32% </progress>
+      </div>
     </div>
 
-    <div>
-      <label for="file">Disciplinas eletivas:</label>
-      <progress id="file" value="20" max="100"> 32% </progress>
-    </div>
+    <div id="actsumary">
+      <div id="titleResumo">
+        <h3 class="title">Resumo Atividades Integralizadas</h3>
+        <hr>
+      </div>
 
-    <div>
-      <label for="file">Horas de estágio obrigatório:</label>
-      <progress id="file" value="18" max="100"> 32% </progress>
-    </div>
+      <table id="tableactsumary">
+        <tr>
+          <th>Nome Atividade</th>
+          <th>Tipo</th>
+          <th>Horas (h)</th>
+        </tr>
+        <tr>
+          <td>Cinema</td>
+          <td>Cultural</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Minicurso arduino</td>
+          <td>Extenção</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Cinema</td>
+          <td>Cultural</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Minicurso arduino</td>
+          <td>Extenção</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <th colspan="8" align="center">Qtd. Créditos Pendentes: 40cr</th>
+        </tr>
+      </table>
+      <br>
 
-    <div>
-      <label for="file">Horas complementares:</label>
-      <progress id="file" value="32" max="100"> 32% </progress>
     </div>
-
-    <div>
-      <label for="file">Horas de extensão:</label>
-      <progress id="file" value="70" max="100"> 32% </progress>
-    </div>
-
-    <div>
-      <label for="file">Horas de programação:</label>
-      <progress id="file" value="32" max="100"> 32% </progress>
-    </div>
-  </div>
-
-  <div id="actsumary">
-    <div id="titleResumo">
-      <h3 class="title">Resumo Atividades Integralizadas</h3>
-      <hr>
-    </div>
-
-    <table id="tableactsumary">
-      <tr>
-        <th>Nome Atividade</th>
-        <th>Tipo</th>
-        <th>Horas (h)</th>
-      </tr>
-      <tr>
-        <td>Cinema</td>
-        <td>Cultural</td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <td>Minicurso arduino</td>
-        <td>Extenção</td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <td>Cinema</td>
-        <td>Cultural</td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <td>Minicurso arduino</td>
-        <td>Extenção</td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <th colspan="8" align="center">Qtd. Créditos Pendentes: 40cr</th>
-      </tr>
-    </table>
-    <br>
 
   </div>
 
@@ -152,6 +181,7 @@
     Superintendência de Tecnologia da Informação
     - UFC - (85) 3366-9999 - si3asprd04.ufc.br
   </footer>
+
 </body>
 
 </html>
