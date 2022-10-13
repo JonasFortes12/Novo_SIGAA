@@ -8,6 +8,11 @@
   <title>Painel de Controle</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -41,59 +46,196 @@
         </ul>
 
       </div>
-      
+
     </div>
   </nav>
-
 
 
   <div class="main-container">
     <br>
     <h1 class="bigtitle">Painel de Controle</h1>
     <br>
-    
-    <div id="profile">
 
-      <div id="titleProfile">
-        <h3 class="title">Perfil</h3>
+    <div id="profile">
+      <div class="titleProfile">
+        <h3>Perfil</h3>
         <hr>
       </div>
 
-      <!-- <div id="divpicture"> -->
-      <div id="divpicture">
-        <img id="picture" src="imgs/minha foto.png" alt="imagem de Perfil" width="100px">
+      <div class="card" style="width: 17rem;">
+        <img class="card-img-top" src="imgs/minha foto.png" alt="Imagem de capa do card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Email:</strong>jonascforte@alu.ufc.br</li>
+          <li class="list-group-item"><strong>Telefine:</strong>089 98807 0734</li>
+        </ul>
       </div>
 
       <div id="divinfo">
+
         <h4>Jonas Carvalho Fortes</h4>
         <h4>Matrícula: 494513</h4>
         <h4>IRA: 8.0</h4>
         <h4>Créditos Integralizados: 32cr</h4>
-      </div>
 
-      <h4 id="color">Tema:</h4>
-      <input id="color" style="color: blue;" type="color">
+        <h4 id="color">Tema:</h4>
+        <input id="color" style="color: blue;" type="color">
+      </div>
 
     </div>
 
     <div id="subjects">
+
       <div id="titleComponentesCurriculares">
         <br>
-        <h3 class="title">Componentes Curriculares Atuais</h3>
+        <h3 class="title">
+          Componentes Curriculares Atuais
+          <span class="badge badge-danger">6 Componentes</span>
+        </h3>
         <hr>
       </div>
-      <br>
-      <a class="component-class" href="">SBL0068 - ELETROMAGNETISMO APLICADO</a>
-      <br>
-      <a class="component-class" href="">SBL0077 - FUNDAMENTOS DE ADMINISTRAÇÃO</a>
-      <br>
-      <a class="component-class" href="">SBL0076 - FUNDAMENTOS DE ECONOMIA</a>
-      <br>
-      <a class="component-class" href="">SBL0078 - HIGIENE INDUSTRIAL E SEGURANÇA NO TRABALHO</a>
-      <br>
-      <a class="component-class" href="">ECO0056 - TECNOLOGIAS WEB</a>
-      <br>
-      <a class="component-class" href="">SBL0095 - VARIAVEIS COMPLEXAS</a>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne">
+              SBL0068 - ELETROMAGNETISMO APLICADO
+            </button>
+          </h2>
+
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>Campus Mucambinho: Bloco I, Sala 11
+                SEG 08:00-10:00
+                QUA 08:00-10:00
+                SEX 08:00-10:00
+                (12/08/2022 - 13/12/2022)</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              SBL0077 - FUNDAMENTOS DE ADMINISTRAÇÃO
+            </button>
+          </h2>
+
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Campus Mucambinho: Bloco I, Sala 04
+                QUA 13:30-15:30
+                (12/08/2022 - 13/12/2022)</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              SBL0076 - FUNDAMENTOS DE ECONOMIA
+            </button>
+          </h2>
+
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>Campus Mucambinho: Bloco I, Sala 05
+                SEX 10:00-12:00
+                (12/08/2022 - 13/12/2022)</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour">
+              SBL0078 - HIGIENE INDUSTRIAL E SEGURANÇA NO TRABALHO
+            </button>
+          </h2>
+
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              <strong>Campus Mucambinho: Bloco I, Sala 04
+                QUI 08:00-10:00
+                (12/08/2022 - 13/12/2022)</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive">
+              ECO0056 - TECNOLOGIAS WEB
+            </button>
+          </h2>
+
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFive">
+            <div class="accordion-body">
+              <strong>Bloco I, Sala 04 / Lab. Prog. Computacional
+                TER 10:00-12:00
+                QUI 10:00-12:00
+                (12/08/2022 - 13/12/2022)</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSix">
+              SBL0095 - VARIAVEIS COMPLEXAS
+            </button>
+          </h2>
+
+          <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSix">
+            <div class="accordion-body">
+              <strong>Campus Mucambinho: Bloco I, Sala 11
+                SEG 08:00-10:00
+                QUA 08:00-10:00
+                SEX 08:00-10:00
+                (12/08/2022 - 13/12/2022)</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar com grupos de botões">
+        <div class="btn-group mr-2" role="group" aria-label="Primeiro grupo">
+          <button type="button" class="btn btn-secondary">Disciplinas Anteriores</button>
+          <button type="button" class="btn btn-secondary">Buscar Disciplinas</button>
+          <button type="button" class="btn btn-secondary">Consultar Grade Curricular</button>
+        </div>
+      </div>
+
+
+
+
+
+
     </div>
 
     <div id="progression">
@@ -175,6 +317,8 @@
     </div>
 
   </div>
+
+
 
   <footer class="footer">
     SIGAA | Copyright © 2010-2022 -

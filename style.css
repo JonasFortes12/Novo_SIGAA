@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Quicksand&display=swap');
 
 * {
-    
+
     font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-div.main-container{
+div.main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,44 +16,44 @@ div.main-container{
 }
 
 
-  header {
+header {
     background: #394674;
     color: #fff;
     width: 100%;
     padding: 0.5rem;
-  
+
     display: flex;
     justify-content: center;
-  }
-  
-  nav#nav-inicio {
+}
+
+nav#nav-inicio {
     width: 100%;
     padding: 0.5rem;
-  
+
     display: flex;
     justify-content: center;
     gap: 1rem;
-  }
-  
-  form.form-login {
+}
+
+form.form-login {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
     padding: 2rem;
-  }
-  
-  footer.footer {
+}
+
+footer.footer {
     background: #394674;
     color: #fff;
     width: 100%;
     padding: 0.5rem;
-  
+
     /* position: absolute; */
     display: flex;
     justify-content: center;
     /* bottom: 0; */
-  }
-  
+}
+
 body {
     background-color: #FDFFFC;
 }
@@ -114,6 +114,32 @@ a#nav-button:hover {
     background-color: #E71D36;
 }
 
+span.badge {
+    color: #E71D36;
+    background-color: bisque;
+}
+
+div.btn-toolbar {
+    justify-content: center !important;
+}
+
+div.btn-group button {
+    background-color: bisque;
+    color: #E71D36;
+    font-weight: bold;
+}
+
+div.btn-group button:hover {
+    background-color: #E71D36;
+    color: #FDFFFC;
+    font-weight: normal;
+}
+
+div.btn-group button:focus {
+    background-color: #E71D36;
+    color: #FDFFFC;
+    font-weight: normal;
+}
 
 
 a.component-class {
@@ -159,8 +185,8 @@ div#actsumary {
     width: 700px;
     padding: 40px 40px 40px 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
 }
+
 
 div#login {
     width: 500px;
@@ -170,29 +196,83 @@ h2#logoname {
     text-align: center;
 }
 
+
 img#picture {
     display: inline-block;
     border-radius: 4%;
     width: 100%;
 }
 
-div#divpicture, div#divinfo{
-    display: inline-block;
+div#profile {
+    display: grid;
+    grid-template-columns: auto 57%;
+    grid-template-rows: auto;
+    column-gap: 1%;
+    height: 530px !important;
 }
-div#divpicture{
-    width: 200px; 
-    height: 200px;
+
+div.titleProfile {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
 }
+
 div#divinfo {
     width: 410px;
     height: 200px;
     font-size: 22px;
     text-align: center;
+    grid-column-start: 2;
 }
+
+div.card {
+    margin: 0px;
+    grid-column-start: 1;
+}
+
+div.card-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+div#divpicture,
+div#divinfo {
+    /* display: inline-block; */
+}
+
+div#divinfo {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 90%;
+    width: fit-content;
+    align-items: center;
+}
+
+div#divpicture {
+    width: 200px;
+    height: 200px;
+}
+
+
+
 div#divinfo h4 {
-    padding-top: 12px;
-    padding-bottom: 18px;
+    padding-top: 5px;
+    padding-bottom: 7px;
 }
+
+h4#color {
+    font-size: 19px;
+    display: inline;
+}
+
+button.accordion-button {
+    background-color: #394674;
+    color: #FDFFFC;
+}
+
+
+
+
 
 
 
@@ -267,18 +347,13 @@ progress::-webkit-progress-value {
 }
 
 
-div#progression div {    
+div#progression div {
     padding: 4px 4px 4px 4px;
 }
 
-input#color{
+input#color {
     width: 20px;
     border-radius: 10px;
-    display: inline;
     background-color: #E71D36;
     border-style: none;
-}
-h4#color{
-    font-size: 19px;
-    display: inline;
 }
