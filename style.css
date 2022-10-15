@@ -16,7 +16,7 @@ div.main-container {
 }
 
 
-header {
+/* header {
     background: #394674;
     color: #fff;
     width: 100%;
@@ -24,7 +24,7 @@ header {
 
     display: flex;
     justify-content: center;
-}
+} */
 
 nav#nav-inicio {
     width: 100%;
@@ -100,17 +100,17 @@ input[type=reset]:hover {
 }
 
 
-a#nav-button {
+a#nav-button, a#secoes {
     background-color: #394674;
     color: #FDFFFC;
     padding: 9px 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 4px;
-    margin-left: 90px;
+    margin-left: 42px;
 }
 
-a#nav-button:hover {
+a#nav-button:hover, a#secoes:hover {
     background-color: #E71D36;
 }
 
@@ -122,6 +122,25 @@ span.badge {
 div.btn-toolbar {
     justify-content: center !important;
 }
+
+div#consultas-discentes{
+    margin-left: 2%;
+}
+div#consultas-discentes button{
+    background-color: #394674;
+    color: #FDFFFC;
+    font-weight: normal;
+}
+
+div#consultas-discentes button:hover{
+    background-color: #E71D36;
+    color: #FDFFFC;
+    font-weight: normal;
+}
+
+
+
+
 
 div.btn-group button {
     background-color: bisque;
@@ -142,7 +161,29 @@ div.btn-group button:focus {
 }
 
 
-a.component-class {
+div#offcanvasRight{
+    background-color: #FDFFFC !important;
+}
+
+
+
+
+div#divinfo button#button-ira {
+    background-color: #394674;
+    color: #FDFFFC;
+    text-align: center;
+    
+}
+
+div#divinfo button#button-ira:hover {
+    background-color: #E71D36;
+    color: #FDFFFC;
+    font-weight: normal;
+
+}
+
+
+a.component-class{
     background-color: #394674;
     color: #FDFFFC;
     padding: 14px 25px;
@@ -167,12 +208,14 @@ a.component-class {
     margin-bottom: 5px;
 }
 
+
+
 .title {
     font-size: 25px;
     text-align: center;
 }
 
-div {
+div.espaced {
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -202,6 +245,7 @@ img#picture {
     border-radius: 4%;
     width: 100%;
 }
+
 
 div#profile {
     display: grid;
@@ -265,12 +309,57 @@ h4#color {
     display: inline;
 }
 
+button#novidades-button{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto auto;
+}
+
+
+button#novidades-button p{
+    flex-grow: 1;
+    margin: 0%
+}
+
+button#novidades-button div.spinner-grow  {
+margin-left: 45%;
+margin-bottom: 1%;
+}
+
+
+
 button.accordion-button {
     background-color: #394674;
     color: #FDFFFC;
 }
 
+div.modal-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
+h1.bigtitle-inform {
+    margin-top: 6%;
+}
+
+
+div.carousel-inner {
+    margin: 0;
+}
+
+div#carrossel {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+div#carouselExampleIndicators {
+    width: 50%;
+    align-self: center;
+}
 
 
 

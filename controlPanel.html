@@ -19,10 +19,45 @@
 <body>
 
   <nav class="navbar navbar-expand-lg bg-light">
+
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img class="img-logo" src="imgs/brasao1_horizontal_cor_300dpi.png" width="250" height="70" alt="">
       </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+
+          <a id="secoes" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Seções</a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#profile">Perfil</a></li>
+            <li><a class="dropdown-item" href="#subjects">Componentes Curriculares</a></li>
+            <li><a class="dropdown-item" href="#progression">Progressão no Curso</a></li>
+            <li><a class="dropdown-item" href="#actsumary">Resumo Atividades Integralizadas</a></li>
+          </ul>
+
+        </li>
+      </ul>
+
+      <div id="consultas-discentes" class="btn-group">
+        <button class="btn btn-secondary btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Consultas Discente
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Progresso no Curso</a></li>
+          <li><a class="dropdown-item" href="#">Situação na Biblioteca</a></li>
+          <li><a class="dropdown-item" href="#">Histórico de IRA</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Atestado de Matrícula</a></li>
+          <li><a class="dropdown-item" href="#">Histórico Escolar</a></li>
+        </ul>
+      </div>
+
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -47,16 +82,19 @@
 
       </div>
 
+
+
     </div>
   </nav>
 
 
   <div class="main-container">
+
     <br>
     <h1 class="bigtitle">Painel de Controle</h1>
     <br>
 
-    <div id="profile">
+    <div class="espaced" id="profile">
       <div class="titleProfile">
         <h3>Perfil</h3>
         <hr>
@@ -74,8 +112,20 @@
 
         <h4>Jonas Carvalho Fortes</h4>
         <h4>Matrícula: 494513</h4>
-        <h4>IRA: 8.0</h4>
         <h4>Créditos Integralizados: 32cr</h4>
+        <p>
+          <button id="button-ira" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            IRA
+          </button>
+        </p>
+        <div style="min-height: 25px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 300px;">
+              IRA = 8.0
+            </div>
+          </div>
+        </div>
 
         <h4 id="color">Tema:</h4>
         <input id="color" style="color: blue;" type="color">
@@ -83,7 +133,7 @@
 
     </div>
 
-    <div id="subjects">
+    <div class="espaced" id="subjects">
 
       <div id="titleComponentesCurriculares">
         <br>
@@ -223,7 +273,7 @@
 
       </div>
 
-      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar com grupos de botões">
+      <div class="btn-toolbar espaced" role="toolbar" aria-label="Toolbar com grupos de botões">
         <div class="btn-group mr-2" role="group" aria-label="Primeiro grupo">
           <button type="button" class="btn btn-secondary">Disciplinas Anteriores</button>
           <button type="button" class="btn btn-secondary">Buscar Disciplinas</button>
@@ -238,45 +288,71 @@
 
     </div>
 
-    <div id="progression">
+    <div class="espaced" id="progression">
 
       <div id="titlePrgressao">
         <h3 class="title">Progressão no Curso</h3>
         <hr>
       </div>
 
+
+
       <div>
         <label for="file">Disciplinas obrigatórias:</label>
-        <progress id="file" value="60" max="100"> 32% </progress>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="width: 75%"></div>
+        </div>
       </div>
 
       <div>
         <label for="file">Disciplinas eletivas:</label>
-        <progress id="file" value="20" max="100"> 32% </progress>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="width: 32%"></div>
+        </div>
       </div>
 
       <div>
         <label for="file">Horas de estágio obrigatório:</label>
-        <progress id="file" value="18" max="100"> 32% </progress>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="width: 18%"></div>
+        </div>
       </div>
 
       <div>
         <label for="file">Horas complementares:</label>
-        <progress id="file" value="32" max="100"> 32% </progress>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="width: 60%"></div>
+        </div>
       </div>
 
       <div>
         <label for="file">Horas de extensão:</label>
-        <progress id="file" value="70" max="100"> 32% </progress>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="width: 70%"></div>
+        </div>
       </div>
 
       <div>
         <label for="file">Horas de programação:</label>
-        <progress id="file" value="32" max="100"> 32% </progress>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="width: 90%"></div>
+        </div>
       </div>
     </div>
 
-    <div id="actsumary">
+    <div class="espaced" id="actsumary">
       <div id="titleResumo">
         <h3 class="title">Resumo Atividades Integralizadas</h3>
         <hr>
@@ -317,7 +393,6 @@
     </div>
 
   </div>
-
 
 
   <footer class="footer">
